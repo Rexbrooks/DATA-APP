@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Data Collection App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Veterinary Data Collection</h1>
+    </header>
+    <main>
+        <form id="data-form">
+            <h2>Report Animal Data</h2>
+            <label for="region">Region:</label>
+            <select id="region" name="region" required>
+                <option value="">Select Region</option>
+                <option value="Region1">Region 1</option>
+                <option value="Region2">Region 2</option>
+                <!-- Add more regions -->
+            </select>
+
+            <label for="district">District:</label>
+            <select id="district" name="district" required>
+                <option value="">Select District</option>
+                <option value="District1">District 1</option>
+                <option value="District2">District 2</option>
+                <!-- Add more districts -->
+            </select>
+
+            <label for="species">Animal Species:</label>
+            <input type="text" id="species" name="species" placeholder="e.g., Dog, Cow" required>
+
+            <label for="disease">Reported Disease:</label>
+            <input type="text" id="disease" name="disease" placeholder="e.g., Rabies" required>
+
+            <label for="vaccination">Vaccination Date:</label>
+            <input type="date" id="vaccination" name="vaccination">
+
+            <button type="submit">Submit Data</button>
+        </form>
+        <div id="message"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Veterinary Data Collection App</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
